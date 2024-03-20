@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wizards</title>
+    <!-- style css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+</head>
+
+<body class="bg-primary-subtle">
+    <main>
+        <section class="container">
+            <div class="row justify-content-center my-5" id="error">
+                <div
+                    class="col-lg-6 p-3 mb-2 bg-danger-subtle text-danger-emphasis border border-1 border-danger-subtle rounded">
+                    <i class="bi bi-exclamation-triangle-fill me-2"></i><span>Please select any card , only then you can
+                        move further!</span>
+                </div>
+            </div>
+            <div class="my-5">
+                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0"
+                    aria-valuemax="100">
+                    <div class="progress-bar" style="width: 0%"></div>
+                </div>
+            </div>
+            <section>
+                <!-- step one -->
+                <div id="stepOne">
+                    <div>
+                        <h1>Select Card</h1>
+                        <p>Please select at least one card</p>
+                    </div>
+                    <div class="row justify-content-evenly my-5">
+                        <div class="col-lg-3">
+                            <div class="card rounded-0 border border-3 border-black-subtle level-one">
+                                <div class="card-body text-center">
+                                    <i class="bi bi-android2 display-1"></i>
+                                    <h4 class="fw-normal card-text my-3 fw-normal">Android</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card rounded-0 border border-3 border-black-subtle level-one">
+                                <div class="card-body text-center">
+                                    <i class="bi bi-apple display-1"></i>
+                                    <h4 class="fw-normal card-text my-3">Apple</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card rounded-0 border border-3 border-black-subtle level-one">
+                                <div class="card-body text-center">
+                                    <i class="bi bi-windows display-1"></i>
+                                    <h4 class="fw-normal card-text my-3">Windows</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="text-black-50 mb-5">
+                    <div class="d-flex justify-content-end">
+                        <button type="button" class="btn btn-info" id="nextOne">Next</button>
+                    </div>
+                </div>
+                <!-- /step one -->
+                <!-- step two -->
+                <div id="stepTwo">
+                    <div>
+                        <h1>Select Card</h1>
+                        <p>Please select at least one card</p>
+                    </div>
+                    <div class="row justify-content-evenly my-5">
+                        <div class="col-lg-3">
+                            <div class="card rounded-0 border border-3 border-black-subtle level-two">
+                                <div class="card-body text-center">
+                                    <i class="bi bi-phone display-1"></i>
+                                    <h4 class="fw-normal card-text my-3">Phone</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card rounded-0 border border-3 border-black-subtle level-two">
+                                <div class="card-body text-center">
+                                    <i class="bi bi-laptop display-1"></i>
+                                    <h4 class="fw-normal card-text my-3">Laptop</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card rounded-0 border border-3 border-black-subtle level-two">
+                                <div class="card-body text-center">
+                                    <i class="bi bi-pc-display display-1"></i>
+                                    <h4 class="fw-normal card-text my-3">Desktop</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="text-black-50 mb-5">
+                    <div class="d-flex justify-content-between">
+                        <button type="button" class="btn btn-secondary" id="backTwo">Back</button>
+                        <button type="button" class="btn btn-info" id="nextTwo">Next</button>
+                    </div>
+                </div>
+                <!-- /step two -->
+                <!-- step three -->
+                <div id="stepThree">
+                    <div>
+                        <h1>Select Card</h1>
+                        <p>Please select at least one card</p>
+                    </div>
+                    <div class="row justify-content-evenly my-5">
+                        <div class="col-lg-3">
+                            <div class="card rounded-0 border border-3 border-black-subtle level-three">
+                                <div class="card-body text-center">
+                                    <i class="bi bi-window-desktop display-1"></i>
+                                    <h4 class="fw-normal card-text my-3">Website</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card rounded-0 border border-3 border-black-subtle level-three">
+                                <div class="card-body text-center">
+                                    <i class="bi bi-google-play display-1"></i>
+                                    <h4 class="fw-normal card-text my-3">Mobile App</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="text-black-50 mb-5">
+                    <div class="d-flex justify-content-between">
+                        <button type="button" class="btn btn-secondary" id="backThree">Back</button>
+                        <button type="button" class="btn btn-info" id="nextThree">Next</button>
+                    </div>
+                </div>
+                <!-- /step three -->
+                <!-- step four -->
+                <div class="row justify-content-center level-four" id="stepFour">
+                    <div class="col-lg-6">
+                        <p
+                            class="p-4 mb-2 bg-body-tertiary text-primary-emphasis border border-1 border-primary-subtle">
+                            Finally We are going to submit your
+                            information if you want to continue that please click on the submit button to finish up your
+                            Working
+                            process.
+                        </p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                I agree to the terms and conditions
+                            </label>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <button type="button" class="btn btn-secondary" id="backFour">Back</button>
+                        <button type="button" class="btn btn-success" id="submit">Submit</button>
+                    </div>
+                </div>
+                <!-- /step four -->
+            </section>
+        </section>
+    </main>
+    <!-- jquery file -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- bootstrap file -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- custom js file -->
+    <script src="./assets/js/style.js"></script>
+
+</body>
+
+</html>
