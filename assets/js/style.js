@@ -3,27 +3,20 @@ $(document).ready(function () {
     $("#stepTwo").hide();
     $("#stepThree").hide();
     $("#stepFour").hide();
+    $("#thankyou").hide();
 
     //next back progress-bar
-    $("#nextOne").click(function () {
-        $(".progress-bar").css("width", "25%");
-    });
     $("#backTwo").click(function () {
         $(".progress-bar").css("width", "0%");
     });
-    $("#nextTwo").click(function () {
-        $(".progress-bar").css("width", "50%");
-    });
     $("#backThree").click(function () {
         $(".progress-bar").css("width", "25%");
-    });
-    $("#nextThree").click(function () {
-        $(".progress-bar").css("width", "75%");
     });
     $("#backFour").click(function () {
         $(".progress-bar").css("width", "50%");
     });
 
+    //active class in cards
     $(".card").click(function () {
         $(this).toggleClass("active");
         if ($(this).hasClass("active")) {
@@ -31,19 +24,6 @@ $(document).ready(function () {
         } else {
             $(this).css({ "background-color": "white" });
         }
-    });
-    //next button
-    $("#nextOne").click(function () {
-        $("#stepTwo").fadeIn(1000);
-        $("#stepOne").hide();
-    });
-    $("#nextTwo").click(function () {
-        $("#stepThree").fadeIn(1000);
-        $("#stepTwo").hide();
-    });
-    $("#nextThree").click(function () {
-        $("#stepFour").fadeIn(1000);
-        $("#stepThree").hide();
     });
     //back button
     $("#backTwo").click(function () {
@@ -58,4 +38,46 @@ $(document).ready(function () {
         $("#stepFour").fadeOut();
         $("#stepThree").show(1000);
     });
+
+    $("#nextOne").click(function () {
+        if ($(".level-one").hasClass("active")) {
+            $("#error").hide();
+            $("#stepTwo").fadeIn(1000);
+            $("#stepOne").hide();
+            $(".progress-bar").css("width", "25%");
+        }
+        else {
+            $("#error").show();
+        }
+    });
+    $("#nextTwo").click(function () {
+        if ($(".level-two").hasClass("active")) {
+            $("#error").hide();
+            $("#stepThree").fadeIn(1000);
+            $("#stepTwo").hide();
+            $(".progress-bar").css("width", "50%");
+        }
+        else {
+            $("#error").show();
+        }
+    });
+    $("#nextThree").click(function () {
+        if ($(".level-three").hasClass("active")) {
+            $("#error").hide();
+            $("#stepFour").fadeIn(1000);
+            $("#stepThree").hide();
+            $(".progress-bar").css("width", "75%");
+        }
+        else {
+            $("#error").show();
+        }
+    });
+    $("#submit").click(function (){
+        $("#thankyou").fadeIn(1000);
+        $("#stepFour").hide();
+        $(".progress-bar").css("width", "100%");
+    });
+    $("#wizardButton").click(function (){
+        location.reload(true);
+    })
 });
