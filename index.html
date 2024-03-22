@@ -13,31 +13,36 @@
 
 <body class="bg-primary-subtle">
     <main class="container">
+        <!-- error -->
         <div class="row justify-content-center my-5" id="error">
-            <div class="col-lg-6 p-3 mb-2 bg-danger-subtle text-danger-emphasis border border-1 border-danger-subtle rounded">
+            <div
+                class="col-lg-6 p-3 mb-2 bg-danger-subtle text-danger-emphasis border border-1 border-danger-subtle rounded">
                 <i class="bi bi-exclamation-triangle-fill me-2"></i><span>Please select any card , only then you can
                     move further!</span>
             </div>
         </div>
+        <!-- /error -->
+        <!-- progress bar -->
         <div class="my-5">
             <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0"
-                aria-valuemax="100" style="height: 5px">
+                aria-valuemax="100" style="height: 5px; width: 100%;">
                 <div class="progress-bar" style="width: 0%"></div>
             </div>
             <ul class="list-inline d-flex justify-content-around mt-3 fw-medium">
-                <li class="list-inline-item level-one">Step 1</li>
-                <li class="list-inline-item level-two">Step 2</li>
-                <li class="list-inline-item level-three">Step 3</li>
-                <li class="list-inline-item level-four">Step 4</li>
+                <li class="list-inline-item">Step 1</li>
+                <li class="list-inline-item">Step 2</li>
+                <li class="list-inline-item">Step 3</li>
+                <li class="list-inline-item">Step 4</li>
             </ul>
         </div>
+        <!-- /progress bar -->
         <!-- step one -->
-        <div id="stepOne">
+        <div class="step" id="stepOne">
             <h1>Select Card</h1>
             <p>Please select one card</p>
             <div class="row justify-content-evenly my-5">
                 <div class="col-lg-3">
-                    <div class="card rounded-0 border border-3 border-black-subtle level-one">
+                    <div class="card rounded-0 border border-3 border-black-subtle ">
                         <div class="p-5 text-center">
                             <i class="bi bi-android2 display-1"></i>
                             <h4 class="fw-normal my-3">Android</h4>
@@ -45,7 +50,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3">
-                    <div class="card rounded-0 border border-3 border-black-subtle level-one">
+                    <div class="card rounded-0 border border-3 border-black-subtle ">
                         <div class="p-5 text-center">
                             <i class="bi bi-apple display-1"></i>
                             <h4 class="fw-normal my-3">Apple</h4>
@@ -53,7 +58,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3">
-                    <div class="card rounded-0 border border-3 border-black-subtle level-one">
+                    <div class="card rounded-0 border border-3 border-black-subtle ">
                         <div class="p-5 text-center">
                             <i class="bi bi-windows display-1"></i>
                             <h4 class="fw-normal my-3">Windows</h4>
@@ -63,18 +68,18 @@
             </div>
             <hr class="text-black-50 mb-5">
             <div class="d-flex justify-content-end">
-                <button type="button" class="btn btn-info" id="nextOne"><span>Next</span><i
+                <button type="button" class="btn btn-info next" id="nextOne"><span>Next</span><i
                         class="bi bi-arrow-right ms-2"></i></button>
             </div>
         </div>
         <!-- /step one -->
         <!-- step two -->
-        <div id="stepTwo">
+        <div class="step" id="stepTwo">
             <h1>Select Card</h1>
             <p>Please select one card</p>
             <div class="row justify-content-evenly my-5">
                 <div class="col-lg-3">
-                    <div class="card rounded-0 border border-3 border-black-subtle level-two">
+                    <div class="card rounded-0 border border-3 border-black-subtle ">
                         <div class="p-5 text-center">
                             <i class="bi bi-phone display-1"></i>
                             <h4 class="fw-normal my-3">Phone</h4>
@@ -82,7 +87,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3">
-                    <div class="card rounded-0 border border-3 border-black-subtle level-two">
+                    <div class="card rounded-0 border border-3 border-black-subtle ">
                         <div class="p-5 text-center">
                             <i class="bi bi-laptop display-1"></i>
                             <h4 class="fw-normal my-3">Laptop</h4>
@@ -90,7 +95,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3">
-                    <div class="card rounded-0 border border-3 border-black-subtle level-two">
+                    <div class="card rounded-0 border border-3 border-black-subtle ">
                         <div class="p-5 text-center">
                             <i class="bi bi-pc-display display-1"></i>
                             <h4 class="fw-normal my-3">Desktop</h4>
@@ -100,20 +105,20 @@
             </div>
             <hr class="text-black-50 mb-5">
             <div class="d-flex justify-content-between">
-                <button type="button" class="btn btn-secondary" id="backTwo"><i
+                <button type="button" class="btn btn-secondary back" id="backTwo"><i
                         class="bi bi-arrow-left me-2"></i><span>Back</span></button>
-                <button type="button" class="btn btn-info" id="nextTwo"><span>Next</span><i
+                <button type="button" class="btn btn-info next" id="nextTwo"><span>Next</span><i
                         class="bi bi-arrow-right ms-2"></i></button>
             </div>
         </div>
         <!-- /step two -->
         <!-- step three -->
-        <div id="stepThree">
+        <div class="step" id="stepThree">
             <h1>Select Card</h1>
             <p>Please select one card</p>
             <div class="row justify-content-evenly my-5">
                 <div class="col-lg-3">
-                    <div class="card rounded-0 border border-3 border-black-subtle level-three">
+                    <div class="card rounded-0 border border-3 border-black-subtle ">
                         <div class="p-5 text-center">
                             <i class="bi bi-window-desktop display-1"></i>
                             <h4 class="fw-normal my-3">Website</h4>
@@ -121,7 +126,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3">
-                    <div class="card rounded-0 border border-3 border-black-subtle level-three">
+                    <div class="card rounded-0 border border-3 border-black-subtle ">
                         <div class="p-5 text-center">
                             <i class="bi bi-google-play display-1"></i>
                             <h4 class="fw-normal my-3">Mobile App</h4>
@@ -131,15 +136,15 @@
             </div>
             <hr class="text-black-50 mb-5">
             <div class="d-flex justify-content-between">
-                <button type="button" class="btn btn-secondary" id="backThree"><i
+                <button type="button" class="btn btn-secondary back" id="backThree"><i
                         class="bi bi-arrow-left me-2"></i><span>Back</span></button>
-                <button type="button" class="btn btn-info" id="nextThree"><span>Next</span><i
+                <button type="button" class="btn btn-info next" id="nextThree"><span>Next</span><i
                         class="bi bi-arrow-right ms-2"></i></button>
             </div>
         </div>
         <!-- /step three -->
         <!-- step four -->
-        <div class="row justify-content-center level-four" id="stepFour">
+        <div class="row justify-content-center level-four step" id="stepFour">
             <div class="col-lg-6">
                 <p class="p-4 mb-2 bg-body-tertiary text-primary-emphasis border border-1 border-primary-subtle">
                     Finally We are going to submit your
@@ -156,14 +161,14 @@
                 </div>
             </div>
             <div class="d-flex justify-content-between">
-                <button type="button" class="btn btn-secondary" id="backFour"><i
+                <button type="button" class="btn btn-secondary back" id="backFour"><i
                         class="bi bi-arrow-left me-2"></i><span>Back</span></button>
                 <button type="button" class="btn btn-success" id="submit">Submit</button>
             </div>
         </div>
         <!-- /step four -->
         <!-- submit page -->
-        <div class="row justify-content-center" id="thankyou">
+        <div class="row justify-content-center step" id="thankyou">
             <div class="col-lg-5 text-success">
                 <div class="text-center py-5">
                     <i class="bi bi-check2-circle display-1"></i>
@@ -175,13 +180,12 @@
         </div>
         <!-- /submit page -->
     </main>
+    <!-- /main section -->
     <!-- jquery file -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- bootstrap file -->
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <!-- custom js file -->
-    <script src="./assets/js/style.js"></script>
-
+    <script src="./assets/js/test.js"></script>
 </body>
-
 </html>

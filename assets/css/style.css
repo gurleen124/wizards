@@ -1,7 +1,7 @@
 @charset "UTF-8";
 .card:hover {
   cursor: pointer;
-  border-color: lightseagreen !important;
+  border-color: steelblue !important;
 }
 
 /*=== import bootstrap ===*/

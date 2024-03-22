@@ -10,7 +10,7 @@ $(document).ready(function () {
     $(".card").click(function () {
         $(this).toggleClass("active");
         $(this).parent(".col-lg-3").siblings().children(".card").removeClass("active").css({ "background-color": "white" });
-        if ($(".card").hasClass("active")) {
+        if ($(this).hasClass("active")) {
             $(this).css({ "background-color": "cornflowerblue" });
         } else {
             $(this).css({ "background-color": "white" })
