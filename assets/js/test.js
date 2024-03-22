@@ -46,6 +46,7 @@ $(document).ready(function () {
             $progressBar.width(newWidth);
         }
         else if ($(!":checkbox:checked").length > 0) {
+            console.log($(!":checkbox:checked"));
             $errorCondition.fadeIn();
         }
         else {
